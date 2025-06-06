@@ -1,0 +1,120 @@
+nav {
+  width: 100%;
+  height: 90px;
+  background-color: white;
+}
+
+.navbar {
+  width: 80%;
+}
+
+.logo img {
+  height: 80px;
+}
+
+.nav-links{
+  display: flex;
+}
+
+.nav-link ul {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.nav-link ul li {
+  margin-right: 37px;
+}
+
+.nav-link ul li a {
+  color: #000;
+}
+
+.nav-button {
+  display: flex;
+}
+
+.nav-log-in button {
+  background-color: transparent;
+  border: 1px solid #FF3E54;
+  border-radius: 5px;
+  height: 44px;
+  width: 130px;
+  color: #FF3E54;
+  margin-right: 16px;
+}
+
+.nav-log-in button:hover{
+  background-color: #ff3e54;
+  color: white;
+}
+
+.nav-sign-up button {
+  background-color: #FF3E54;
+  border-radius: 5px;
+  height: 44px;
+  width: 130px;
+  color: white;
+  border: none;
+}
+
+.nav-sign-up button:hover{
+  background-color: transparent;
+  color: #ff3e54;
+  border: 1px solid #ff3e54;
+}
+
+/* Hamburger styling */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: #333;
+  transition: 0.3s;
+}
+
+/* ----------------- Media Queries ----------------- */
+
+/* For screens below 768px */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-link ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-button {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .nav-log-in button,
+  .nav-sign-up button {
+    width: 100%;
+  }
+}

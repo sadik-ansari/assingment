@@ -1,0 +1,62 @@
+/* Light-dark background */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(10, 10, 10, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+/* Card style */
+.thankyou-card {
+  background: white;
+  padding: 40px 32px;
+  border-radius: 16px;
+  width: 450px;
+  max-width: 90%;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Emoji */
+.emoji {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+/* Headline */
+.thankyou-card h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Subtext */
+.thankyou-card p {
+  font-size: 14px;
+  margin: 12px 0 24px;
+  color: #555;
+}
+
+/* Done Button */
+.done-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background-color: #ff3e54;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.done-btn:hover {
+  background-color: #e6374b;
+}

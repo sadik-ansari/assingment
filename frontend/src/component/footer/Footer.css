@@ -1,0 +1,193 @@
+footer {
+  width: 80%;
+  /* max-width: 1500px; */
+  margin: 140px auto 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-section-one {
+  flex: 1 1 100%;
+  max-width: 500px;
+}
+
+.footer-section-one img {
+  height: 100px;
+  width: 180px;
+}
+
+.footer-section-one p:nth-child(2) {
+  text-align: start;
+  font-size: 13px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.footer-section-one .input-field {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.footer-section-one .input-field input {
+  background-color: white;
+  border: 1px solid black;
+  height: 40px;
+  flex: 1;
+  min-width: 200px;
+  padding: 0 10px;
+}
+
+.footer-section-one .input-field button {
+  border: none;
+  border-radius: 6px;
+  background-color: #FF3E54;
+  height: 40px;
+  width: 96px;
+  color: white;
+  cursor: pointer;
+}
+
+.footer-section-one p:nth-child(4) {
+  text-align: start;
+  font-size: 9px;
+  font-weight: 400;
+  margin-top: 9px;
+}
+
+.footer-section-two,
+.footer-section-three,
+.footer-section-four {
+  flex: 1 1 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  text-align: start;
+}
+
+.footer-section-four p i {
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+h6 {
+  text-align: start;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p,
+.footer-section-two p,
+.footer-section-three p,
+.footer-section-four p {
+  font-size: 11px;
+  font-weight: 400;
+  margin: 6px 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+hr {
+  width: 90%;
+  margin: 20px auto;
+  border: 0.5px solid #ccc;
+}
+
+.rights {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 11px;
+}
+
+.rights .rights-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.rights .rights-links a {
+  font-size: 11px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+/* ========================
+   Media Queries for Responsive Layout
+   ======================== */
+
+/* Tablet */
+@media (max-width: 992px) {
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-section-one,
+  .footer-section-two,
+  .footer-section-three,
+  .footer-section-four {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .footer-section-one .input-field {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-section-one .input-field input {
+    width: 100%;
+  }
+
+  .footer-section-one .input-field button {
+    width: 100%;
+  }
+
+  .rights {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .rights .rights-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .footer-section-one img {
+    height: 80px;
+    width: 150px;
+  }
+
+  h6 {
+    font-size: 13px;
+  }
+
+  p,
+  .rights .rights-links a {
+    font-size: 10px;
+  }
+
+  .footer-section-one .input-field button {
+    height: 36px;
+    font-size: 14px;
+  }
+
+  .footer-section-one .input-field input {
+    height: 36px;
+  }
+}

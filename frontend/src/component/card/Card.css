@@ -1,0 +1,160 @@
+.main-section {
+  background-color: #F7F7FB;
+  width: 100%;
+}
+
+.card {
+  width: 80%;
+  background-color: transparent;
+  padding-top: 56px;
+  gap: 24px;
+  border: none;
+}
+
+.card .card-left {
+  flex: 1 1 65%;
+  background-color: #FF3E54;
+  border-radius: 26.37px;
+  padding: 32px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.card .card-left p {
+  margin-bottom: 24px;
+  word-wrap: break-word;
+}
+
+.card .card-left p:first-child {
+  font-size: clamp(36px, 6vw, 80px);
+  line-height: 1.2;
+}
+
+.card .card-left p:nth-child(2) {
+  font-size: clamp(14px, 2vw, 20px);
+  font-weight: 400;
+}
+
+.card .card-left-button {
+  gap: 16px;
+  margin-top: 36px;
+}
+
+.card .card-left-button .btn-one,
+.card .card-left-button .btn-two {
+  border-radius: 81px;
+  height: 58px;
+  width: 178px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.card .card-left-button .btn-one {
+  background-color: white;
+  color: black;
+}
+
+.card .card-left-button .btn-two {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.card .card-right {
+  flex: 1 1 30%;
+  background-color: white;
+  border-radius: 26.37px;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.card .card-right-upper p {
+  font-size: clamp(20px, 4vw, 36px);
+  font-weight: 700;
+}
+
+.card .card-right-upper .dots i {
+  font-size: 24px;
+}
+
+.card .card-right-middle {
+  margin: 24px 0;
+}
+
+.card .card-right-middle .left-slider,
+.card .card-right-middle .right-slider {
+  font-size: 18px;
+  color: black;
+}
+
+
+.card .card-right-lower .text p:nth-child(2) {
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+}
+
+.card .card-right-lower .text p:nth-child(3) {
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+}
+
+.trusted-brand {
+  width: 80%;
+  margin: 48px auto;
+}
+
+.trusted-brand .google p,
+.trusted-brand .facebook p,
+.trusted-brand .youtube p,
+.trusted-brand .pinterest p {
+  font-size: clamp(18px, 5vw, 32px);
+  color: #170F4999;
+  font-weight: 600;
+}
+
+.trusted-brand .youtube,
+.trusted-brand .pinterest {
+  gap: 8px;
+}
+
+.trusted-brand i {
+  font-size: 32px;
+  color: #170F4999;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    padding: 24px 0;
+  }
+
+  .card .card-left,
+  .card .card-right {
+    flex: 1 1 100%;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .card .card-left p:first-child {
+    font-size: 36px;
+  }
+
+  .card .card-left-button {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .trusted-brand {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .trusted-brand p {
+    font-size: 20px;
+  }
+}

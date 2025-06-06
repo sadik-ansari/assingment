@@ -1,0 +1,104 @@
+.hero-section {
+  background-color: #f7f7fb;
+  padding: 40px 20px;
+}
+
+.title {
+  margin-top: 32px;
+}
+
+.title p {
+  font-size: 40px;
+  font-weight: 700;
+  color: #170f49;
+  max-width: 700px;
+  line-height: 1.2;
+}
+
+.subtitle {
+  margin-top: 26px;
+}
+
+.subtitle p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #6f6c90;
+  line-height: 150%;
+  max-width: 650px;
+}
+
+.cta-button {
+  margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.cta-button .get-start button,
+.cta-button .learn-more button {
+  width: 182px;
+  height: 56px;
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.cta-button .get-start button {
+  background-color: #ff3e54;
+  color: white;
+  border: none;
+}
+
+.cta-button .learn-more button {
+  background-color: transparent;
+  border: 1px solid #ff3e54;
+  color: #ff3e54;
+}
+
+.cta-button .get-start button:hover{
+  background-color: transparent;
+  color: #ff3e54;
+  border: 1px solid #ff3e54;
+}
+
+.cta-button .learn-more button:hover{
+  background-color: #ff3e54;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  .title p {
+    font-size: 32px;
+    max-width: 90%;
+  }
+
+  .subtitle p {
+    font-size: 16px;
+    max-width: 90%;
+  }
+
+  .cta-button {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-button button {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title p {
+    font-size: 26px;
+  }
+
+  .subtitle p {
+    font-size: 15px;
+  }
+
+  .cta-button button {
+    height: 50px;
+    font-size: 15px;
+  }
+}

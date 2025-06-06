@@ -1,0 +1,32 @@
+.table-wrapper {
+  margin: 40px auto;
+  max-width: 1000px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-table thead {
+  background-color: #f6f6f6;
+}
+
+.user-table th,
+.user-table td {
+  padding: 16px 20px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.user-table tr:last-child td {
+  border-bottom: none;
+}
+
+.user-table input[type="checkbox"] {
+  transform: scale(1.2);
+}
