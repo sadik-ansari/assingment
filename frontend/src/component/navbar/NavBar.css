@@ -77,9 +77,6 @@ nav {
   transition: 0.3s;
 }
 
-/* ----------------- Media Queries ----------------- */
-
-/* For screens below 768px */
 @media (max-width: 768px) {
   .hamburger {
     display: flex;

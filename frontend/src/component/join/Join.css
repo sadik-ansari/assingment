@@ -3,7 +3,6 @@
   align-items: center;
   justify-content: space-between;
   width: 80%;
-  /* max-width: 1200px; */
   margin: 60px auto;
   flex-wrap: wrap;
   gap: 40px;
@@ -63,11 +62,7 @@
   cursor: pointer;
 }
 
-/* =============================
-   Responsive Media Queries
-   ============================= */
 
-/* Tablet */
 @media (max-width: 992px) {
   .join-us {
     flex-direction: column-reverse;
@@ -89,7 +84,7 @@
   }
 }
 
-/* Mobile */
+
 @media (max-width: 576px) {
   .join-us .start p:nth-child(1) {
     font-size: 1.8rem;

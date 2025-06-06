@@ -24,10 +24,9 @@ function App() {
   return (
     <>
       <NavBar />
-      {/* Pass setShowForm to HeroSection so it can open the form */}
+
       <HeroSection setShowForm={setShowForm} />
 
-      {/* Show form overlay if triggered */}
       {showForm && (
         <Form
           onFormSubmit={addEntry}
@@ -40,7 +39,6 @@ function App() {
       <Customer />
       <Join />
 
-      {/* Show table below Join only if entries exist */}
       {submittedList.length > 0 && <Table users={submittedList} />}
 
       <Footer />

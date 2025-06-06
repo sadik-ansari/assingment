@@ -26,7 +26,7 @@ const HeroSection = ({ setShowForm }) => {
           </div>
         </div>
       </div>
-      {/* Form rendering moved outside, so nothing here */}
+     
     </>
   );
 };

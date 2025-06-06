@@ -16,11 +16,10 @@
 
 .features .features-cards {
   display: flex;
-  flex-wrap: wrap; /* enables wrapping */
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   width: 80%;
-  /* max-width: 1200px; */
   margin: 0 auto;
 }
 
@@ -97,7 +96,6 @@
   margin-top: 10px;
 }
 
-/* Responsive Media Queries */
 @media (max-width: 1024px) {
   .features .features-title p {
     font-size: 2rem;

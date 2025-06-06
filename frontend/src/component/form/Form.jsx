@@ -47,8 +47,8 @@ const Form = ({ onFormSubmit, onClose }) => {
     setTimeout(() => {
       setShowThankYou(false);
       setOverlayVisible(false);
-      onFormSubmit(formData);  // Pass data to App component
-      if (onClose) onClose();  // Notify parent to close form
+      onFormSubmit(formData); 
+      if (onClose) onClose();
     }, 3000);
   };
 
